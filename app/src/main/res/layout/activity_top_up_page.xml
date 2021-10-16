@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopUpPage"
+    android:background="#E5E5E5">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonKembaliTopUp"
+        android:layout_width="18dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginLeft="38dp"
+        app:srcCompat="@drawable/back"
+        android:background="#E5E5E5"/>
+    <TextView
+        android:id="@+id/textIsiSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montseraat_medium"
+        android:text="Isi Saldo Akun"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textJumlahUang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textIsiSaldo"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="54dp"
+        android:text="Jumlah Uang"
+        android:fontFamily="@font/montseraat_medium"
+        android:textSize="18dp"
+        android:textColor="#424242"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_below="@id/textJumlahUang"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="356dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="356dp"
+        android:paddingStart="20dp"
+        android:hint="Mulai dari Rp 10.000 hingga Rp 500.000"
+        android:fontFamily="@font/montseraat_medium"
+        android:textSize="13dp"
+        android:background="@drawable/edittext"
+        android:paddingLeft="20dp" />
+    <TextView
+        android:id="@+id/pilih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext1"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="29dp"
+        android:text="Atau pilih yang lain"
+        android:fontFamily="@font/montseraat_medium"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#424242"/>
+
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pilih"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="14dp"
+        android:text="Rp 10.000"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="@drawable/button_pilih"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pilih"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="14dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rp 20.000"
+        android:textSize="12dp"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pilih"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="323dp"
+        android:text="Rp 50.000"
+        android:textSize="12dp"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pilih"
+        android:layout_marginTop="88dp"
+        android:layout_marginLeft="35dp"
+        android:text="Rp 100.000"
+        android:textSize="12dp"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pilih"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="88dp"
+        android:layout_centerHorizontal="true"
+        android:text="Rp 200.000"
+        android:textSize="12dp"
+        android:textAllCaps="false"/>
+    <Button
+        android:layout_width="90dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pilih"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="323dp"
+        android:text="Rp 500.000"
+        android:textSize="12dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="161dp"
+        android:layout_marginBottom="31dp"
+        android:text="Isi Ulang"
+        android:textSize="20dp"
+        android:fontFamily="@font/montseraat_medium"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/button"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/white"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

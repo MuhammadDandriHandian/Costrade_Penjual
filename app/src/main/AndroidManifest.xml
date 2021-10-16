@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dandri.costrade_penjual">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Costrade_Penjual">
+        <activity android:name=".DaftarPesananPage"></activity>
+        <activity android:name=".UbahProdukPage" />
+        <activity android:name=".TambahProdukPage" />
+        <activity android:name=".DaftarProdukPage" />
+        <activity android:name=".DetailOrderPage" />
+        <activity android:name=".SuccessPage" />
+        <activity android:name=".NextTopUpPage" />
+        <activity android:name=".TopUpPage" />
+        <activity android:name=".ChangeProfile" />
+        <activity android:name=".ProfilePage" />
+        <activity android:name=".FinancialReport" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".SignInPage" />
+        <activity android:name=".SplashPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartingPage" />
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+rootProject.name = "Costrade_Penjual"
+include ':app'

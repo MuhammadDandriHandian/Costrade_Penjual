@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInPage"
+    android:background="#E5E5E5">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="128dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montseraat_medium"
+        android:text="Costrade"
+        android:textColor="#4F4F4F"
+        android:textSize="43dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="294dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="71dp"
+        android:layout_below="@+id/textView2"
+        android:id="@+id/email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Email"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="294dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/password"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="18dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_marginRight="80dp"
+            android:textColor="#4F4F4F"
+            android:fontFamily="@font/montseraat_medium"
+            android:text="Ingatkan Saya"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lupa Password"
+            android:textSize="10dp"
+            android:fontFamily="@font/montseraat_medium"
+            android:textColor="#4F4F4F"/>
+</LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="294dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="560dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_start"
+        android:fontFamily="@font/montseraat_medium"
+        android:text="Lanjut"
+        android:textAllCaps="false"
+        app:backgroundTint="#E4094D"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="13dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun ?"
+            android:fontFamily="@font/montseraat_medium"
+            android:textColor="#4F4F4F"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Daftar"
+            android:fontFamily="@font/montseraat_medium"
+            android:textColor="#E4094D"/>
+    </LinearLayout>
+</RelativeLayout>
